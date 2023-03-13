@@ -5,6 +5,7 @@ export function App() {
   return (
     <div>
       <Header></Header>
+      <button>remove user</button>
       Hello World
     </div>
   );
