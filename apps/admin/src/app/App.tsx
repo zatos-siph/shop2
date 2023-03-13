@@ -2,12 +2,7 @@
 import { Header } from '@nx101/ui';
 
 export function App() {
-  return (
-    <div>
-      <Header></Header>
-      Hello Admin
-    </div>
-  );
+  return <div>Hello Admin</div>;
 }
 
 export default App;
