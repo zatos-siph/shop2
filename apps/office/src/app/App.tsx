@@ -2,7 +2,14 @@
 import { Header } from '@nx101/ui';
 
 export function App() {
-  return <div>Regis User</div>;
+  return (
+    <div>
+      <Header></Header>
+      <button>remove user</button>
+      <button>regis user</button>
+      Hello World
+    </div>
+  );
 }
 
 export default App;
