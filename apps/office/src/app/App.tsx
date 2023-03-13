@@ -9,6 +9,7 @@ export function App() {
       <button>remove user</button>
       <button>regis user</button>
       Hello World
+      <button>Add log out</button>
     </div>
   );
 }
