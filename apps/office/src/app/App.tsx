@@ -5,8 +5,10 @@ export function App() {
   return (
     <div>
       <Header></Header>
+      <button>add login</button>
       <button>remove user</button>
-      Hello World Add register
+      <button>regis user</button>
+      Hello World
       <button>Add log out</button>
     </div>
   );
