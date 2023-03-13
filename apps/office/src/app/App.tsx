@@ -6,7 +6,8 @@ export function App() {
     <div>
       <Header></Header>
       <button>remove user</button>
-      Hello World
+      Hello World Add register
+      <button>Add log out</button>
     </div>
   );
 }
