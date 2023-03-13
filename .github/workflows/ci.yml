@@ -1,0 +1,29 @@
+name: CI
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    types: [opened, reopened]
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v3
+      - name: Install dependencies
+        run: yarn install
+      - name: Check for un-formatted files
+        run: npx nx format:check
+      - name: Lint
+        run: npx nx affected --target=lint --parallel=3
+      - name: Test
+        run: npx nx affected --target=test --parallel=3 --configuration=ci
