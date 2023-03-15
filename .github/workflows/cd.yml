@@ -36,7 +36,7 @@ jobs:
           images: ghcr.io/zatos-siph/shop2
       - name: 'Build images'
         run: INPUT_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=container --push --parallel=2
-- name: Read docker-compose.yml contents
+      - name: Read docker-compose.yml contents
         id: docker
         uses: juliangruber/read-file-action@v1
         with:
