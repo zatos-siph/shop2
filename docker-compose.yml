@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  api:
+    image: 'ghcr.io/n-thongjor/fullstack-ts/api:v0.1'
+    ports:
+      - '3111:3000'
+  office:
+    image: 'ghcr.io/n-thongjor/fullstack-ts/office:v0.1'
+    ports:
+      - '3112:80'
+  admin:
+    image: 'ghcr.io/n-thongjor/fullstack-ts/admin:v0.1'
+    ports:
+      - '3113:80'
