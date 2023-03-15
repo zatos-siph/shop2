@@ -5,7 +5,11 @@ export function App() {
   return (
     <div>
       <Header></Header>
+      <button>add login</button>
+      <button>remove user</button>
+      <button>regis user</button>
       Hello World
+      <button>Add log out</button>
     </div>
   );
 }
