@@ -5,7 +5,7 @@ export function App() {
   return (
     <div>
       <Header></Header>
-      Hello Admin test
+      Hello Admin
     </div>
   );
 }

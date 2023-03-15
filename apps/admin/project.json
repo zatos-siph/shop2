@@ -72,7 +72,7 @@
       "options": {
         "engine": "docker",
         "metadata": {
-          "images": ["ghcr.io/zatos-siph/shop2/admin"],
+          "images": ["nx101/admin"],
           "load": true,
           "tags": [
             "type=schedule",
